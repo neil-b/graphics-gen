@@ -46,8 +46,7 @@ if __name__ == '__main__':
         if ball2.position != ball.position: # ignore collisions with itself
           from matrix import length
           # if two balls collide:
-          if length([p1 - p2 for p1, p2 in zip(ball.position, ball2.position)]) 
-              < ballRadius * 2:
+          if length([p1 - p2 for p1, p2 in zip(ball.position, ball2.position)]) < ballRadius * 2:
             ball.velocity = [-v for v in ball.velocity]
 
       # apply changes to position
